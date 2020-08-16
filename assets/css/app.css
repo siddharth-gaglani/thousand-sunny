@@ -333,22 +333,24 @@ a:hover {
   }
 }
 
-.typewriter h1 {
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0 auto;
-  animation:
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-
-
-@keyframes typing {
-  from {
-    width: 0
+@media (min-width: 992px) {
+  .typewriter h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation:
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
   }
 
-  to {
-    width: 100%
+
+  @keyframes typing {
+    from {
+      width: 0
+    }
+
+    to {
+      width: 100%
+    }
   }
 }
